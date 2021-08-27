@@ -67,9 +67,6 @@
     document.getElementById('pagename').innerHTML = 'Home';
    }
 
-
-
-
 //    function printdiv(printdivname) {
 //     var headstr = "<html><head><title>Booking Details</title></head><body>";
 //     var footstr = "</body>";
