@@ -1,10 +1,10 @@
    var config = {
-   api_url: "http://api.kharidar.co/api/v1/", /* make sure the url should end with slash " / " */
+   api_url: "https://api.kharidar.co/api/v1/", /* make sure the url should end with slash " / " */
    appname: "Kharidar", 
    language: "en", 
    currency: "PKR",
    logo: "http://api.kharidar.co/public/assets/img/logo.png"
-   }    
+   }
 
    // trigger async function
    // log response or catch error of fetch promise
