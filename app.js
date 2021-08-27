@@ -49,7 +49,7 @@
    // Rainbow Giant Styled Text
    const style = 'font-weight: bold; font-size: 14px;';
    console.log('%c Categories Cached', style);
-   // console.log(categories);
+   console.log(categories);
 
    }
 
