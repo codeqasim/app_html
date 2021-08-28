@@ -5,11 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 <meta http-Equiv="Cache-Control" Content="no-cache" />
 <link rel="stylesheet" href="assets/css/style.css" />
-<!--<base href="/">-->
+<base href="http://localhost/app/">
 </head>
 <body onload="fade();">
 
-<header include="app/views/_header.html"></header>
+<header>
+<button class="bar_btn">
+<span class="bar_icon">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</span>
+</button>
+
+<a class="logo" href="./">
+<img src="http://api.kharidar.co/public/assets/img/logo.png" alt="logo" />
+</a>
+
+<div class="search">
+<input type="text" name="search" placeholder="Search by product name" />
+</div>
+</header>
 
 <main>
 
@@ -31,7 +47,7 @@
 
 </main>
 
-<div include="app/views/_footer.html"></div>
+<footer include="app/views/_footer.html"></footer>
 
 </body>
 <script src="assets/js/app.js"></script>

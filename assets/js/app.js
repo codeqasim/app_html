@@ -6,8 +6,6 @@
 
 
 
-
-
     var config = {
     api_url: "https://api.kharidar.co/api/v1/", /* make sure the url should end with slash " / " */
     appname: "Kharidar", 
