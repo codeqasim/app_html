@@ -1,3 +1,13 @@
+    import ('../../app/controllers/home.js');
+
+    // vendors
+    import ('../../vendor/include_html.js');
+
+
+
+
+
+
     var config = {
     api_url: "https://api.kharidar.co/api/v1/", /* make sure the url should end with slash " / " */
     appname: "Kharidar", 
@@ -74,18 +84,5 @@
 
     // =========================================================== //
 
-    var uri=window.location.pathname.split('/');
-
-    console.log(uri[2])
-
-    if (uri[2] == "about"){
-    document.getElementById('pagename').innerHTML = 'About Us';
-    }
-
-    if (uri[2] == "home"){
-    document.getElementById('pagename').innerHTML = 'Home';
-    }
-
-
-    // include html function
-    function includeHTML(){var e,t,n,i,u;for(e=document.getElementsByTagName("*"),t=0;t<e.length;t++)if(i=(n=e[t]).getAttribute("include"))return(u=new XMLHttpRequest).onreadystatechange=function(){4==this.readyState&&(200==this.status&&(n.innerHTML=this.responseText),404==this.status&&(n.innerHTML="Page not found."),n.removeAttribute("include"),includeHTML())},u.open("GET",i,!0),void u.send()}includeHTML();
+    // fadein page load
+    function fade() {  document.body.style.opacity='1' };

@@ -1,4 +1,18 @@
-body{ font-family: sans-serif; opacity: 0; transition: opacity 0.3s; -webkit-transition: opacity 0.3s; padding: 0px; margin: 0px; }
+/* MAIN BODY */
+body{ font-family: sans-serif; opacity: 0; transition: opacity 0.1s; -webkit-transition: opacity 0.1s; padding: 0px; margin: 0px; }
+
+/* HEADER */
+header { height: 70px; width: 100%; box-shadow: 0 0 #000,0 0 transparent,0 0 transparent,0 2px 4px rgba(0,0,0,0.12); }
+
+/* HEADER BAR ICON */
+header .bar_icon{width:26px;height:auto;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+header .bar{width:13px;height:3px;display:flex;transition:all .25s ease-in-out;--tw-bg-opacity:1;background-color:rgba(33,33,33,var(--tw-bg-opacity));border-radius:.125rem}
+header .bar:nth-child(2){width:26px;margin:5px 0}
+header .bar:last-child{width:18px}
+header .bar_btn{display:flex;justify-content: center; align-items: center; width: 90px; height: 100%;}
+header .bar_btn:hover .bar:first-child{width:26px}
+header .bar_btn:hover .bar:nth-child(2){width:13px}
+
 
 button{text-transform:none}
 button{-webkit-appearance:button}
@@ -18,12 +32,7 @@ svg{display:block;vertical-align:middle}
 *{--tw-shadow:0 0 transparent;--tw-ring-inset:var(--tw-empty,);--tw-ring-offset-width:0;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,0.5);--tw-ring-offset-shadow:0 0 transparent;--tw-ring-shadow:0 0 transparent}
 button,input,input[type=search]{-webkit-appearance:none}
 .header {top: 0;}
-.menuIcon{width:26px;height:auto;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
-.bar{width:13px;height:3px;display:flex;transition:all .25s ease-in-out;--tw-bg-opacity:1;background-color:rgba(33,33,33,var(--tw-bg-opacity));border-radius:.125rem}
-.bar:nth-child(2){width:26px;margin:5px 0}
-.bar:last-child{width:18px}
-.menuBtn:hover .bar:first-child{width:26px}
-.menuBtn:hover .bar:nth-child(2){width:13px}
+
 .sr-only{width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
 .absolute,.sr-only{position:absolute}
 .relative{position:relative}
