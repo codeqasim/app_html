@@ -1,17 +1,16 @@
     import ('../../app/controllers/home.js');
 
-    // vendors
-    import ('../../vendor/include_html.js');
-
-
-
+    // VENDORS - LIBS
+    import ('../../vendor/include_html.js');      // HTML including file 
+    import ('../../vendor/lazy_img.js');          // Lazy load with fade effect 
 
     var config = {
     api_url: "https://api.kharidar.co/api/v1/", /* make sure the url should end with slash " / " */
     appname: "Kharidar", 
     language: "en", 
     currency: "PKR",
-    logo: "http://api.kharidar.co/public/assets/img/logo.png"
+    logo: "http://api.kharidar.co/public/assets/img/logo.png",
+    img_path: "https://api.kharidar.co/public/"
     }
 
     // trigger async function
@@ -31,10 +30,25 @@
     const app = document.querySelector('#categories');
 
     categories.forEach((item) => {
+
     app.innerHTML += `
-    <li>
-    <a href="${item.id}">${item.name}</a>
-    </li>
+
+    <div class="c2" ontouchstart="this.classList.toggle('hover');">
+    <div class="containers">
+    <div class="front" style="background-image: url(https://api.kharidar.co/public/${item.banner})">
+    <div class="inner">
+    <p>${item.name}</p>
+    <span></span>
+    </div>
+    </div>
+    <div class="back">
+    <div class="inner">
+    <p>Category ID ${item.id}.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+
     `;
     });
 
